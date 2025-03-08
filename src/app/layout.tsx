@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 import { PhoneIcon, MailIcon, MapPinIcon, ClockIcon, TruckIcon } from "./icons";
 
@@ -21,14 +22,14 @@ export default function RootLayout({
         <header className="fixed w-full backdrop-blur-xl bg-white/70 z-50 border-b border-gray-200/30">
           <nav className="container mx-auto px-4 py-5">
             <div className="flex items-center justify-between">
-              <a href="/" className="text-2xl font-medium text-gray-900">
+              <Link href="/" className="text-2xl font-medium text-gray-900">
                 Bodrum Ambar
-              </a>
+              </Link>
               <div className="hidden md:flex space-x-8">
-                <a href="/" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Ana Sayfa</a>
-                <a href="/hizmetler" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Hizmetler</a>
-                <a href="/hakkimizda" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Hakkımızda</a>
-                <a href="/iletisim" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">İletişim</a>
+                <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Ana Sayfa</Link>
+                <Link href="/hizmetler" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Hizmetler</Link>
+                <Link href="/hakkimizda" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Hakkımızda</Link>
+                <Link href="/iletisim" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">İletişim</Link>
               </div>
               <button className="md:hidden text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -80,7 +81,7 @@ export default function RootLayout({
                   </p>
                   <p className="text-gray-600 text-sm flex items-center">
                     <TruckIcon />
-                    <span className="ml-2">Türkiye'nin Her Yerine Nakliyat</span>
+                    <span className="ml-2">{`Türkiye${`'`}nin Her Yerine Nakliyat`}</span>
                   </p>
                 </div>
               </div>

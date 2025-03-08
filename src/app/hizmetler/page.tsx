@@ -70,11 +70,11 @@ export default function Hizmetler() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Şehirlerarası Nakliyat</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Türkiye'nin her noktasına güvenli ve hızlı nakliyat hizmeti sunuyoruz.
-                  Modern araç filomuz ve deneyimli şoförlerimizle eşyalarınız güvende.
+                  {`Türkiye${`'`}nin her noktasına güvenli ve hızlı nakliyat hizmeti sunuyoruz.
+                  Modern araç filomuz ve deneyimli şoförlerimizle eşyalarınız güvende.`}
                 </p>
                 <ul className="space-y-3 text-gray-600">
-                  <li>✓ Türkiye'nin her iline hizmet</li>
+                  <li>✓ {`Türkiye${`'`}nin her iline hizmet`}</li>
                   <li>✓ GPS takip sistemi</li>
                   <li>✓ Kapalı kasa araçlar</li>
                   <li>✓ Parsiyel taşıma imkanı</li>

@@ -39,7 +39,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <a 
+              <Link 
                 href="/iletisim" 
                 className="group px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 font-medium text-sm inline-flex items-center justify-center shadow-lg shadow-gray-900/10 hover:shadow-gray-900/20"
               >
@@ -47,13 +47,13 @@ export default function Home() {
                 <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">
                   <ArrowRightIcon />
                 </span>
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/hizmetler" 
                 className="px-8 py-4 bg-white text-gray-900 rounded-2xl hover:bg-gray-50 transition-all duration-300 font-medium text-sm inline-flex items-center justify-center border border-gray-200/50 shadow-lg shadow-gray-900/[0.05]"
               >
                 Hizmetlerimizi İnceleyin
-              </a>
+              </Link>
             </div>
 
             {/* İstatistikler */}
@@ -150,7 +150,7 @@ export default function Home() {
                 <TruckIcon />
               </div>
               <h3 className="text-xl font-medium text-gray-900 mb-4">Şehirlerarası Nakliyat</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Türkiye'nin her yerine güvenli taşımacılık.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{`Türkiye${`'`}nin her yerine güvenli taşımacılık.`}</p>
             </div>
           </div>
         </div>

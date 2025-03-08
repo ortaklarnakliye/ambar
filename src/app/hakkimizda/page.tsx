@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 export default function Hakkimizda() {
+  const heroText = `2010${`'`}DAN BERİ`;
+  const turkiyeText = `Türkiye${`'`}nin önde gelen nakliyat firmalarından biri olarak, modern teknoloji ve yenilikçi çözümlerle müşterilerimize en iyi hizmeti sunmak ve sektörde lider konuma ulaşmaktır.`;
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -12,7 +15,7 @@ export default function Hakkimizda() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="text-gray-500 text-sm font-medium">2010'DAN BERİ</span>
+            <span className="text-gray-500 text-sm font-medium">{heroText}</span>
             <h1 className="text-4xl md:text-6xl font-medium mt-4 text-gray-900">
               Güvenilir Nakliyat
               <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">
@@ -64,11 +67,7 @@ export default function Hakkimizda() {
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl">
               <h2 className="text-2xl font-medium mb-6 text-gray-900">Vizyonumuz</h2>
-              <p className="text-gray-600 leading-relaxed">
-                Türkiye'nin önde gelen nakliyat firmalarından biri olarak, modern teknoloji ve
-                yenilikçi çözümlerle müşterilerimize en iyi hizmeti sunmak ve sektörde lider
-                konuma ulaşmaktır.
-              </p>
+              <p className="text-gray-600 leading-relaxed">{turkiyeText}</p>
             </div>
           </section>
 
